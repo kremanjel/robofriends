@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+h1 {
+    font-family: 'SEGA LOGO FONT';
+    color: #0ccac4;
+    font-weight: 200;
+}
+
+#app {
+    height: 100vh;
+    
+    /* grid container settings */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+      'header'
+      'main';
+}
+  
+#app > header {
+    grid-area: header;
+}
+
+#app > Scroll {
+    grid-area: main;
+}
+  
